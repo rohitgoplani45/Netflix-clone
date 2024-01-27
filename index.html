@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        
+       }
+       nav{
+        display: flex;
+        justify-content: center;
+        text-align: center;        
+       }
+       .left {
+        font-size: 30px;
+        padding-right: 700px;
+        
+       }
+
+       .left h1{
+        color: rgb(255, 0, 0);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 40px;
+       }
+
+       .right ul {
+        list-style: none;
+        gap: 20px;
+        padding-top: 35px;
+       }
+       .Up{
+        background-color: rgba(0, 0, 0, 0.351);
+        color: white;
+        margin-top: 25px;
+        width: 150px;
+        font-size: 20px;
+       }
+       
+
+       .right button{
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        font-weight: 600;
+        color: white;
+        border-color: rgba(255, 255, 255, 0.397);
+       }
+       
+       .Sign{
+        background-color: red;
+        padding-right: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+
+       }
+       .Sign:hover{
+        background-color: rgb(173, 11, 11);
+       }
+
+      
+
+    header img {
+        width: 1500px;
+        height: 705px;
+        }
+    
+    header{
+        background-image: url('bg.jpg');
+        height: 705px;  
+    }
+    
+    .content{
+        text-align: center;
+        padding-top: 270px;
+        font-size: 30px;
+        gap: 30px;
+        color: white;
+       }
+
+       .content p{
+        font-size: 25px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+       }
+       .content :placeholder-shown{
+        height: 40px;
+        width: 350px;
+        font-size: 20px;
+        margin-right: 30px;
+        border-color: rgba(255, 255, 255, 0.673);
+        background-color: rgba(0, 0, 0, 0.375);
+    }
+
+    .content button{
+        height: 45px;
+        width: 150px;
+        color: white;
+        font-weight: 550;
+        font-size: 20px;
+        border-color: red;
+        border-radius: 5px;
+        background-color: red;
+    }
+    
+    .content1{
+        background-color: black;
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        
+    }
+     .left1{
+        color: white;
+        text-align: center;
+        margin-top: 250px;
+        font-size: 30px;
+     }
+     .left1 p{
+        margin-top: 30px;
+        font-size: 25px;
+     }
+     
+    .right1{
+       display: flex;
+       justify-content: space-around;
+        margin-right: 100px;
+        margin-top: 60px;
+    }
+    .right1 img{
+        position: absolute;
+        z-index: 1;
+    }
+    .right1 video{
+        position: absolute;
+        width: 470px;
+        height: 460px;   
+    }
+
+    .content2{
+        background-color: black;
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px; 
+    }
+     
+    .BMW{
+        position: absolute;
+    }
+    
+
+    .right2{
+        color: white;
+        text-align: center;
+        margin-top: 250px;
+        font-size: 30px;
+        padding-left: 350px; 
+    }
+    .right2 p{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .content3{
+        background-color: black;
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px; 
+    }
+
+    .left3{
+        color: white;
+        text-align: center;
+        margin-top: 250px;
+        font-size: 30px; 
+    }
+    .left3 p{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .right3{
+        display: flex;
+       justify-content: space-around;
+        margin-right: 100px;
+        margin-top: 60px;
+    }
+    .right3 img{
+position: absolute;
+z-index: 1;
+width: 650px;
+    }
+
+    .right3 video{
+position: absolute;
+width: 380px;
+margin-top: 50px;
+margin-right: 10px;
+    }
+
+    .content4{
+        background-color: black;
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px; 
+    }
+.left4{
+    margin-top: 100px;
+}
+    
+.right4{
+    color: white;
+        text-align: center;
+        margin-top: 225px;
+        font-size: 30px; 
+}
+.right4 p{
+    margin-top: 30px;
+        font-size: 25px;
+}
+.FAQ{
+    background-color: black;
+        height: 600px;
+       color: white;
+        margin-top: 10px; 
+}
+.FAQ h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.FAQ ul li button{
+    width: 700px;
+    height: 40px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.751);
+    text-align: center;
+    background-color: rgba(58, 56, 56, 0.782);
+}
+.FAQ ul li{
+    padding: 5px;
+    
+}
+.FAQ ul{
+    text-align: center;
+    list-style: none;
+    padding-bottom: 30px;
+    
+}
+.FAQ ul li button h5{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.a{
+    padding-left: 400px;
+    font-size: 30px;
+    
+}
+.b{
+    padding-left: 240px;
+    font-size: 30px;
+}
+.c{
+    padding-left: 355px;
+    font-size: 30px;
+}
+.d{
+   padding-left: 390px; 
+
+   font-size: 30px;}
+.e{
+    padding-left: 260px;
+
+    font-size: 30px;}
+.f{
+    padding-left: 300px;
+
+    font-size: 30px;}
+
+    .g{
+        font-size: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+       }
+       
+       .FAQ :placeholder-shown{
+        height: 40px;
+        width: 350px;
+        font-size: 20px;
+        margin-right: 30px;
+        margin-left: 500px;
+        border-color: rgba(255, 255, 255, 0.673);
+        background-color: rgba(0, 0, 0, 0.375);
+    }
+
+    .hero{
+        height: 45px;
+        width: 150px;
+        color: white;
+        font-weight: 550;
+        font-size: 20px;
+        border-color: red;
+        border-radius: 5px;
+        background-color: red;
+    }
+    .don:hover{
+        height: 40px;
+        width: 350px;
+        font-size: 20px;
+        margin-right: 30px;
+        margin-left: 500px;
+        border-color: rgba(255, 255, 255, 0.673);
+        background-color: rgba(0, 0, 0, 0.604);
+        color: white;
+    }
+    .actor:hover{
+        height: 40px;
+        width: 350px;
+        font-size: 20px;
+        margin-left: 500px;
+        border-color: rgba(255, 255, 255, 0.673);
+        background-color: rgba(0, 0, 0, 0.604);
+        color: white;
+    }
+footer{
+    height: 300px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+    table{
+color: rgb(204, 199, 199);
+padding-top: 100px;
+margin-left: 100px;
+font-size: 20px;
+    }
+    table td{
+        width: 450px;
+    }
+    </style>    
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="left">
+                <h1>NETFLIX</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <button class="Up"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><span class="material-symbols-outlined">
+                            translate
+                            </span>English </button>
+                        <button class="Sign">Sign In</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="content">
+           <h1>Unlimited movies, TV shows and more</h1>
+           <p>Watch anywhere. Cancel anytime.</p>
+           <p>Ready to watch? Enter your email to create or restart your membership.</p>
+           <input class="actor" type="text" placeholder="Email address">
+           <button>Get Started > </button>
+        </div>
+    </header>
+    <div class="content1">
+        <div class="left1">
+            <h1>Enjoy on your TV</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</p>
+           
+        </div>
+        <div class="right1">
+            <video src="videoa.m4v" autoplay loop></video>
+            <img src="tv.png">
+            
+        </div>
+    </div>
+    <div class="content2">
+        <div class="left2">
+            <img class="BMW" src="phone.jpg">
+            
+        </div>
+        <div class="right2">
+            <h1>Download your shows <br>to watch offline</h1>
+        
+        <p>Save your favourites easily and <br>always have something to watch.</h3></p>
+    </div>
+    </div>
+    <div class="content3">
+        <div class="left3">
+            <h1>Watch everywhere</h1>
+            <p>Stream unlimited movies and TV shows<br> on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="right3">
+            <img src="ipad.png">
+        <video src="video1.m4v"  display></video>
+        </div>
+    </div>
+    <div class="content4">
+        <div class="left4">
+            <img src="children.png">
+        </div>
+        <div class="right4">
+            <h1>Create profiles for kids</h1>
+            <p>Send children on adventures with their favourite <br>characters in a space made just for<br> them—free with your membership.</p>
+        </div>
+    </div>
+
+    <div class="FAQ">
+        <h1>Frequently Asked Questions</h1>
+        <ul>
+        <li><button><h5>What is Netflix?<p class="a">+</p></h5></button></li>
+        <li><button><h5>How much does Netflix cost?<p class="b">+</p></h5></button></li>
+        <li><button><h5>Where can I watch?<p class="c">+</p></h5></button></li>
+        <li><button><h5>How do I cancel?<p class="d">+</p></h5></button></li>
+        <li><button><h5>What can I watch on Netflix<p class="e">+</p></h5></button></li>
+        <li><button><h5>Is Netflix good for kids?<p class="f">+</p></h5></button></li>
+    </ul>
+    <p class="g">Ready to watch? Enter your email to create or restart your membership.</p>
+    <input class="don" type="text" placeholder="Email address"> 
+    <button class="hero">Get Started ></button>
+    </div>
+
+    
+</body>
+<footer>
+    
+    <table >
+        <tr>
+            <td>FAQ</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Investor Relations</td>
+            <td>Help centre</td>
+            <td>Account</td>
+            <td>Media centre</td>
+        </tr>
+        <tr>
+            <td>Privacy</td>
+            <td>Jobs</td>
+            <td>Ways to watch</td>
+            <td>Terms of use</td>
+        </tr>
+        <tr>
+            <td>Speed test</td>
+            <td>Cookie Preferences</td>
+            <td>Corporate Information</td>
+            <td>Contact us</td>
+        </tr>
+        <tr>
+             <td>Netflix India</td>
+            <td>Legal Notices</td>
+            <td>Only on Netflix</td>  
+        </tr>
+    </table>
+</footer>
+</html>
